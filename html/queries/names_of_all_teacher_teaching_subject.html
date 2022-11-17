@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>List of tables</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+  <script src="../../js/libs/jquery.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-center">
+  <a class="nav-item nav-link" href="../list.html">Home</a>
+</nav>
+<h2 class="text-center">Find names of all teachers that teach subject</h2>
+<div class="container mt-5 d-flex justify-content-around">
+    <div class="m-1 w-25">
+      <form class="input-group">
+        <span class="input-group-text w-25 text-dark bg-light border-1 border-end-0"> Subject </span>
+        <input class="form-control w-75 text-white bg-dark border-1 border-start-0" id="name">
+      </form>
+      <div class="d-flex justify-content-center mt-2">
+        <a class="btn btn-dark" onclick="run()"> run </a>
+      </div>
+    </div>
+    <table class="m-1 w-75 table table-dark" >
+        <thead>
+            <tr>
+                <th class="text-center" scope="col">name</th>
+            </tr>
+        </thead>
+        <tbody id="list"></tbody>
+    </table>
+</div>
+<script src="../../js/queries/names_of_all_teacher_teaching_subject.js"></script>
+<script src="../../js/control/general.js"></script>
+</body>
+</html>

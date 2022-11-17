@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>List of tables</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+  <script src="../../js/libs/jquery.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-center">
+  <a class="nav-item nav-link" href="../list.html">Home</a>
+</nav>
+<h2 class="text-center">Find names of all students that attend elective led by teacher</h2>
+<div class="container mt-5 d-flex justify-content-around">
+    <div class="w-25 m-1">
+      <form class="input-group border-bottom-0">
+        <span class="input-group-text w-25 text-dark bg-light border-1 border-end-0 border-bottom-0 rounded-0"> Elective</span>
+        <input class="form-control w-75 text-white bg-dark border-1 border-start-0" id="elective_name">
+      </form>
+      <form class="input-group border-top-0">
+        <span class="input-group-text w-25 text-dark bg-light border-1 border-end-0 border-top-0 rounded-0"> Teacher</span>
+        <input class="form-control w-75 text-white bg-dark border-1 border-start-0" id="teacher_name">
+      </form>
+      <div class="d-flex justify-content-center mt-2">
+        <a class="btn btn-dark" onclick="run()"> run </a>
+      </div>
+    </div>
+    <table class="w-75 m-1 table table-dark" >
+        <thead>
+        <tr>
+            <th class="text-center" scope="col">name</th>
+        </tr>
+        </thead>
+        <tbody id="list"></tbody>
+    </table>
+</div>
+<script src="../../js/queries/names_of_all_students_that_attend_elective_led_by_teacher.js"></script>
+<script src="../../js/control/general.js"></script>
+</body>
+</html>
