@@ -22,7 +22,7 @@ function getRecords(table) {
 
 function addRecords(records) {
     let list = document.getElementById('list')
-    list.innerHTML += records.map(getHTMLForRecord).join()
+    list.innerHTML += records.map(getHTMLForRecord).join('\n')
 }
 
 function addRecord(record) {
